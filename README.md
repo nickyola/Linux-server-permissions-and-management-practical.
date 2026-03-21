@@ -70,7 +70,7 @@ Linux automatically:
 sudo adduser nicky ; sudo adduser love
 ```
 
-![user-creation](images/user-creation-proccess.JPG)
+![user creation](images/user-creation-process.JPG)
 
 ---
 ### Step 1b — Executing Multiple Commands Efficiently
@@ -81,7 +81,7 @@ This technique is useful for automation scripts, DevOps workflows, and rapid ser
 sudo adduser nicky ; sudo adduser love
 sudo groupadd devteam ; sudo usermod -aG devteam nicky ; sudo usermod -aG devteam love
 
-![multiple commands](images/multiple-commands.jpg)
+![multiple commands](images/Multiple-commands.jpg)
 
 ## Step 2 — Creating a Team Group
 
@@ -106,7 +106,7 @@ mkdir permission-lab
 cd permission-lab
 ```
 
-![permission-lab-created](images/permission-lab-created.JPG)
+![permission lab created](images/permission-lab-created.JPG)
 
 ---
 
@@ -230,7 +230,7 @@ This helped me learn:
 - Need for proper group membership  
 - Correct permission adjustment strategy  
 
-![permission-denied](images/permission-denied.JPG)
+![permission-denied](images/permission-denied.jpg)
 
 ---
 
