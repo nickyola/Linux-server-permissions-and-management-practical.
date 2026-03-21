@@ -1,8 +1,6 @@
 # Linux-server-permissions-and-management-practical.
 Hands-on Linux system administration project focused on user management, file permissions, and secure shared directory configuration.
 
-# Linux User & Permission Management Practical (Real Lab)
-
 ## Project Overview
 
 In this practical session, I built a real multi-user Linux server environment to understand how system administrators manage users, groups, file ownership and permissions securely.
@@ -10,6 +8,36 @@ In this practical session, I built a real multi-user Linux server environment to
 The goal was to simulate a real DevOps collaboration scenario where multiple users work on the same server while maintaining proper access control and security.
 
 ---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Step 1 — Creating Users](#step-1--creating-users)
+- [Step 2 — Creating a Team Group](#step-2--creating-a-team-group)
+- [Step 3 — Creating Permission Lab Workspace](#step-3--creating-permission-lab-workspace)
+- [Step 4 — Creating Files and Project Directory](#step-4--creating-files-and-project-directory)
+- [Step 5 — Practicing Basic Permission Change](#step-5--practicing-basic-permission-change)
+- [Step 6 — Recursive Permission and Ownership](#step-6--recursive-permission-and-ownership)
+- [Step 7 — Creating Shared Project Folder for Team](#step-7--creating-shared-project-folder-for-team)
+- [Step 8 — Setting SGID for Group Inheritance](#step-8--setting-sgid-for-group-inheritance)
+- [Step 9 — Multi-User Collaboration Test](#step-9--multi-user-collaboration-test)
+- [Step 10 — Creating Global Shared Folder](#step-10--creating-global-shared-folder-sticky-bit-lab)
+- [Step 11 — Sticky Bit Protection Test](#step-11--sticky-bit-protection-test)
+- [Step 12 — Permission Denied Troubleshooting](#step-12--permission-denied-troubleshooting)
+- [Step 13 — Recovering Sudo Privileges](#step-13--recovering-sudo-privileges)
+- [Key Commands Practiced](#key-commands-practiced)
+- [Real DevOps Scenario](#real-devops-scenario)
+- [Lessons Learned](#lessons-learned)
+- [Future Improvements](#future-improvements)
+- [Challenges Faced During This Project](#challenges-faced-during-this-project)
+- [What I Would Do in a Production Environment](#what-i-would-do-in-a-production-environment)
+- [Key Concepts Learned](#key-concepts-learned)
+- [Project Timeline](#project-timeline)
+- [Production Risk Analysis](#production-risk-analysis)
+- [Repository Folder Structure](#repository-folder-structure)
+- [Learning Roadmap](#learning-roadmap)
+- [Conclusion](#conclusion)
+- [Author](#author)
 
 ## Step 1 — Creating Users
 
