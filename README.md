@@ -48,7 +48,8 @@ During the first connection attempt, the system displayed a security prompt requ
 Accepting this prompt established a trusted encrypted communication channel between my local machine and the remote server.
 
 This step is important in real DevOps workflows because it ensures secure remote infrastructure access.
-![first connect](first-connect.jpg)
+
+![ssh connection](images/server-ssh-connection.JPG)
 
 ## Step 1 — Creating Users
 
@@ -69,7 +70,7 @@ Linux automatically:
 sudo adduser nicky ; sudo adduser love
 ```
 
-![user-creation](user-creation.jpg)
+![user-creation](images/user-creation-proccess.JPG)
 
 ---
 ### Step 1b — Executing Multiple Commands Efficiently
@@ -80,7 +81,7 @@ This technique is useful for automation scripts, DevOps workflows, and rapid ser
 sudo adduser nicky ; sudo adduser love
 sudo groupadd devteam ; sudo usermod -aG devteam nicky ; sudo usermod -aG devteam love
 
-![multiple commands](multiple-commands.jpg)
+![multiple commands](images/multiple-commands.jpg)
 
 ## Step 2 — Creating a Team Group
 
@@ -92,7 +93,7 @@ sudo usermod -aG devteam nicky
 sudo usermod -aG devteam love
 ```
 
-![group-creation](group-creation.jpg)
+![group-creation](images/group-creation.JPG)
 
 ---
 
@@ -105,7 +106,7 @@ mkdir permission-lab
 cd permission-lab
 ```
 
-![permission-lab-created](permission-lab-created.jpg)
+![permission-lab-created](images/permission-lab-created.JPG)
 
 ---
 
@@ -122,7 +123,7 @@ touch file.txt script.sh
 mkdir project
 ```
 
-![files-created](files-created.jpg)
+![files-created](images/files-created.JPG)
 
 ---
 
@@ -137,7 +138,7 @@ chmod 600 file.txt
 
 This helped me understand execute permission and restricted file access.
 
-![basic-permission-change](basic-permission-change.jpg)
+![basic-permission-change](images/basic-permission-change.JPG)
 
 ---
 
@@ -150,7 +151,7 @@ chmod -R 755 project
 sudo chown ubuntu:ubuntu project
 ```
 
-![recursive-permission](recursive-permission.jpg)
+![recursive-permission](images/recursive-permission.JPG)
 
 ---
 
@@ -164,7 +165,7 @@ sudo chown :devteam /project-team
 sudo chmod 770 /project-team
 ```
 
-![shared-project-created](shared-project-created.jpg)
+![shared-project-created](images/shared-project-created.JPG)
 
 ---
 
@@ -176,7 +177,7 @@ To ensure all files created inside the folder inherit the group ownership, I ena
 sudo chmod g+s /project-team
 ```
 
-![sgid-enabled](sgid-enabled.jpg)
+![sgid-enabled](images/sgid-enabled.JPG)
 
 ---
 
@@ -189,7 +190,7 @@ This confirmed:
 - Files inherit devteam group  
 - Collaboration works correctly  
 
-![collaboration-test](collaboration-test.jpg)
+![collaboration-test](images/collaboration-test.JPG)
 
 ---
 
@@ -205,7 +206,7 @@ sudo chmod +t /shared-work
 
 Sticky bit ensures users cannot delete files owned by others.
 
-![sticky-bit-folder](sticky-bit-folder.jpg)
+![sticky-bit-folder](images/sticky-bit-folder.JPG)
 
 ---
 
@@ -215,7 +216,7 @@ One user created a file and another user attempted deletion.
 
 Deletion failed, confirming sticky bit security.
 
-![sticky-bit-test](sticky-bit-test.jpg)
+![sticky-bit-test](images/sticky-bit-test.JPG)
 
 ---
 
@@ -229,7 +230,7 @@ This helped me learn:
 - Need for proper group membership  
 - Correct permission adjustment strategy  
 
-![permission-denied](permission-denied.jpg)
+![permission-denied](images/permission-denied.JPG)
 
 ---
 
@@ -244,7 +245,7 @@ sudo usermod -aG sudo love
 sudo usermod -aG sudo nicky
 ```
 
-![sudo-privilege-fix](sudo-privilege-fix.jpg)
+![sudo-privilege-fix](images/sudo-privilege-fix.JPG)
 
 ---
 
