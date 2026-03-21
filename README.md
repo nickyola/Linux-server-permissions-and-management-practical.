@@ -39,6 +39,17 @@ The goal was to simulate a real DevOps collaboration scenario where multiple use
 - [Conclusion](#conclusion)
 - [Author](#author)
 
+## Step 0 — First Remote Connection to Server (SSH Trust Establishment)
+
+Before starting the permission management lab, I connected remotely to the Linux server using SSH through MobaXterm.
+
+During the first connection attempt, the system displayed a security prompt requesting confirmation of the server’s identity (host fingerprint verification).
+
+Accepting this prompt established a trusted encrypted communication channel between my local machine and the remote server.
+
+This step is important in real DevOps workflows because it ensures secure remote infrastructure access.
+![first connect](first-connect.jpg)
+
 ## Step 1 — Creating Users
 
 To simulate team members on the server, I created two users:
@@ -61,6 +72,15 @@ sudo adduser nicky ; sudo adduser love
 ![user-creation](user-creation.jpg)
 
 ---
+### Step 1b — Executing Multiple Commands Efficiently
+
+To improve administrative efficiency, I practiced executing multiple Linux commands in a single line using the command separator ;.
+
+This technique is useful for automation scripts, DevOps workflows, and rapid server configuration.
+sudo adduser nicky ; sudo adduser love
+sudo groupadd devteam ; sudo usermod -aG devteam nicky ; sudo usermod -aG devteam love
+
+![multiple commands](multiple-commands.jpg)
 
 ## Step 2 — Creating a Team Group
 
