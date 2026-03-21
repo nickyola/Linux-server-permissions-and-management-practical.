@@ -1,6 +1,12 @@
 # Linux-server-permissions-and-management-practical.
 Hands-on Linux system administration project focused on user management, file permissions, and secure shared directory configuration.
 
+![Linux](https://img.shields.io/badge/Linux-System%20Administration-blue?logo=linux)
+![Project Type](https://img.shields.io/badge/Project-Hands--On%20Lab-green)
+![Focus](https://img.shields.io/badge/Focus-User%20Management%20%26%20Permissions-orange)
+![Level](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
 ## Project Overview
 
 In this practical session, I built a real multi-user Linux server environment to understand how system administrators manage users, groups, file ownership and permissions securely.
@@ -216,7 +222,7 @@ One user created a file and another user attempted deletion.
 
 Deletion failed, confirming sticky bit security.
 
-![sticky-bit-test](images/sticky-bit-test.JPG)
+![sticky-bit-test](images/sticky-bit-test.jpg)
 
 ---
 
